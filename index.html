@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unblocked Games</title>
+  <link rel="icon" href="Logo.png" type="image/png">
+  <style>
+    #hyperlink {
+      top: 15px;
+      left: 300px;
+    }
+    .txt {
+      font-size: 28px;
+      color: white;
+      text-decoration: underline;
+      position: absolute;
+      top: 0px;
+      left: 930px;
+    }
+    .link {
+      appearance: none;
+      border: 0;
+      border-color: #fff;
+      border-radius: 5px;
+      background: #007fff;
+      color: #000000;
+      padding: 0px 46px;
+      font-size: 20px;
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 9%;
+      overflow: hidden;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-image: url("galaxy.jpg");
+      overflow-y: auto; }
+
+    header {
+      background: #007fff;
+      padding: 20px;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    } 
+    .form {
+      font-size: 28px;
+      position: absolute;
+      top: 20px;
+      left: 370px;
+      cursor: pointer;
+    } 
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .game-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .game-card h3 {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="txt">Over 40 Games To Play!</h1>
+  <header>
+    <h1>Unblocked Games</h1>
+      <div onclick="openGame('https://forms.gle/YcwATBBoH8Uii2hZ9', 'Report Problem/Game Suggestion')">
+        <h1 class="form">Report Problem/Game Suggestion</h1>
+      </div>
+  </header>
+  <div class="game-grid" id="gameGrid">
+    <div class="game-card" onclick="openGame('https://html5.gamedistribution.com/rvvASMiM/539918329ae14cbfbe02b0e0df4619ef/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.twoplayergames.org%2Fgame%2Fmx-offroad-master&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy50d29wbGF5ZXJnYW1lcy5vcmcvZ2FtZS9teC1vZmZyb2FkLW1hc3RlciIsInBhcmVudERvbWFpbiI6InR3b3BsYXllcmdhbWVzLm9yZyIsInRvcERvbWFpbiI6ImdhbWVmbGFyZS5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9', 'MX Offroad Master')">
+      <img src="https://img.gamepix.com/games/mx-offroad-master/cover/mx-offroad-master.png?w=400&ar=16:10" alt="Mx Offroad Master">
+      <h3>MX Offroad Master</h3>
+    </div>
+
+    <div class="game-card" onclick="openGame('https://eggy-car.github.io/gamefinalthree/minecraft-1-8/', 'Minecraft')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBPpLlaKIzFxZcVyHTW-G_fOu-o8m55dbO_g&s" alt="Minecraft">
+      <h3>Minecraft</h3>
+    </div>
+
+    <div class="game-card" onclick="openGame('https://gswitch3.github.io/g8/the-impossible-quiz/', 'The Impossible Quiz')">
+      <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=1200,fit=cover,f=png/3cd96c99-46c1-4ff0-b04a-82381ea07349.png" alt="The Impossible Quiz">
+      <h3>The Impossible Quiz</h3>
+    </div>
+	<div class="game-card" onclick="openGame('https://slope-game.github.io/rungame/slope/', 'Slope')">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg6s6a6emcwYQe1rYlhZTqGy1tAPalZkkldw&s" alt="Slope">
+		<h3>Slope</h3>
+	  </div>
+	  <div class="game-card" onclick="openGame('https://htmlxm.github.io/h/tunnel-rush/', 'Tunnel Rush')">
+		<img src="https://htmlxm.github.io/thumb/tunnel-rush.png" alt="Tunnel Rush">
+		<h3>Tunnel Rush</h3>
+	  </div>
+	  <div class="game-card" onclick="openGame('https://ubgfun.github.io/sports/8-ball-pool/', '8 Ball Pool')">
+		<img src="https://www.play-games.com/files/img/8-ball-billiards-classic-1663606033.jpg" alt="8 Ball Pool">
+		<h3>8 Ball Pool</h3>
+	  </div>
+	  <div class="game-card" onclick="openGame('https://flappybirdgame.github.io/file/', 'Flappy Bird')">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfNCp_pCEMI-hylDErnfP5Jg17I94ygxd7Eg&s" alt="Flappy Bird">
+		<h3>Flappy Bird</h3>
+	</div>
+	<div class="game-card" onclick="openGame('https://snow-rider3d.github.io/file/', 'Snow Rider 3D')">
+		<img src="https://tylerpalko.github.io/gamehub/snowrider3d/snow-rider-3d.png" alt="Snow Rider 3D">
+		<h3>Snow Rider 3D</h3>
+	</div>
+	<div class="game-card" onclick="openGame('https://lnahtml.github.io/a8/subway-surfers-newyork/', 'Subway Surfers')">
+		<img src="https://subwaygame.github.io/images/logo.png" alt="Subway Surfers">
+		<h3>Subway Surfers</h3>
+	</div>
+	<div class="game-card" onclick="openGame('https://paperio-2.github.io/a9/paper-io-2/', 'Paper.io 2')">
+		<img src="https://play-lh.googleusercontent.com/SWTpYqsX9RN2YirCDnAjQ8qsbgn4UrHkRRGsjwuASnHMVqssIvWKzq82mP82y_ffBSE" alt="Paper.io 2">
+		<h3>Paper.io 2</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://lnahtml.github.io/a/stickman-hook/', 'Stickman Hook')">
+		<img src="https://htmlxm.github.io/thumb/stickman-hook.png" alt="Stickman Hook">
+		<h3>Stickman Hook</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://ovo-game.github.io/o/ovo/', 'OvO')">
+		<img src="https://ovo-classic.github.io/assets/img/img1.png" alt="OvO">
+		<h3>OvO</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://lekug.github.io/tn6pS9dCf37xAhkJv/', 'Run 3')">
+		<img src="https://nvshs.github.io/games/assets/run3.png" alt="Run 3">
+		<h3>Run 3</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://tomb-ofthe-mask.github.io/file/', 'Tomb Of The Mask')">
+		<img src="https://htmlxm.github.io/thumb/tomb-of-the-mask.png" alt="Tomb Of The Mask">
+		<h3>Tomb Of The Mask</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://vex-5.github.io/gamevex2/vex5/', 'Vex 5')">
+		<img src="https://slope-game.github.io/newgame/vex5/logo.png" alt="Vex 5">
+		<h3>Vex 5</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://crazygames-unblocked.github.io/c9/vex-6/', 'Vex 6')">
+		<img src="https://slope-game.github.io/newgame/vex6/logo.png" alt="Vex 6">
+		<h3>Vex 6</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://ovo-game.github.io/o9/vex-7/', 'Vex 7')">
+		<img src="https://slope-game.github.io/newgame/vex7/logo.png" alt="Vex 7">
+		<h3>Vex 7</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://classroomjq.github.io/vex-8/', 'Vex 8')">
+		<img src="https://githubiogames.com/wp-content/uploads/2024/06/Vex-8.png" alt="Vex 8">
+		<h3>Vex 8</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://narrow-one.github.io/n8/moto-x3m/', 'Moto X3M')">
+		<img src="https://narrow-one.github.io/imgs/moto-x3m.png" alt="Moto X3M">
+		<h3>Moto X3M</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://ovo-game.github.io/o/among-us/', 'Among Us')">
+		<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg" alt="Among Us">
+		<h3>Among Us</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://1v1-lol-online.github.io/file/', '1v1.lol')">
+		<img src="https://repository-images.githubusercontent.com/547809200/a28ac12a-6cb3-48dd-9a35-04118fd0a68c" alt="1v1.lol">
+		<h3>1v1.lol</h3>
+  </div>
+  <div class="game-card" onclick="openGame('https://elastic-man-online.github.io/file/', 'Elastic Man')">
+		<img src="https://23azostore.github.io/img/elastic-man.png" alt="Elastic Man">
+		<h3>Elastic Man</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://webglmath.github.io/eggy-car/', 'Eggy Car')">
+		<img src="https://avatars.githubusercontent.com/u/193616620?s=280&v=4" alt="Eggy Car">
+		<h3>Eggy Car</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://playfreegamesonlinewithoutdownloading.github.io/cookie-clicker.html', 'Cookie Clicker')">
+		<img src="https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok" alt="Cookie Clicker">
+		<h3>Cookie Clicker</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://eggy-car.github.io/gamefinalthree/rblx_obby/', 'Roblox Obby')">
+		<img src="https://play.gilect.com/images/icons/obbyblox.webp" alt="Roblox Obby">
+		<h3>Roblox Obby</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://bitlifeonline.github.io/ragdoll-archers/', 'Ragdoll Archers')">
+		<img src="https://play-lh.googleusercontent.com/JpM37b8IM7OslxU1LnKuSc_4wEPy26DFsN3tXkmRl3-XiTmOroCxk_kkru2d66IM1g=w526-h296-rw" alt="Ragdoll Archers">
+		<h3>Ragdoll Archers</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://abinbins.github.io/a7/jetpack-joyride/', 'Jetpack Joyride')">
+		<img src="https://jetpack-joyride.github.io/images/logo.png" alt="Jetpack Joyride">
+		<h3>Jetpack Joyride</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://bloons-towerdefense.github.io/file/', 'Bloons Tower Defence')">
+		<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/960090/capsule_616x353.jpg?t=1738893448" alt="Bloons Tower Defence">
+		<h3>Bloons Tower Defence</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://ubg89.github.io/Bloxorz/', 'Bloxorz')">
+		<img src="https://www.coolmathgames.com/sites/default/files/Bloxorz_OG-logo.jpg" alt="Bloxorz">
+		<h3>Bloxorz</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://bitlifeonline.github.io/slice-master/', 'Slice Master')">
+		<img src="https://bitlifeonline.github.io/slice-master/logo.png" alt="Slice Master">
+		<h3>Slice Master</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://slope-game.github.io/snail-bob-1-html5/', 'Snail Bob')">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTatFe_hCokL0bOJ7ZNZ-hhhMdMBKoK_B9V4w&s" alt="Snail Bob">
+		<h3>Snail Bob</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://drive-mad-games.github.io/file/', 'Drive Mad')">
+		<img src="https://roblox-unblock.github.io/thumb/drive-mad.png" alt="Drive Mad">
+		<h3>Drive Mad</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://23azostore.github.io/s8/temple-run-2/', 'Temple Run 2')">
+		<img src="https://23azostore.github.io/img/temple-run-2.png" alt="Temple Run 2">
+		<h3>Temple Run 2</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://23azostore.github.io/s2/brain-test-tricky-puzzles/', 'Brain Test')">
+		<img src="https://23azostore.github.io/img/brain-test-tricky-puzzles.png" alt="Brain Test">
+		<h3>Brain Test</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://tataedu23.github.io/g22/class-491/', 'Red Ball 4')">
+		<img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/9b739087f9938fb143a2519252addbb8.png" alt="Red Ball 4">
+		<h3>Red Ball 4</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://trafficjam3d.github.io/traffic-jam-3d/', 'Traffic Run 3D')">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jc36iddVhA6yh8KXrs0PL2ofHSWJtcGu3Q&s" alt="Traffic Run 3D">
+		<h3>Traffic Run 3D</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://ubg365.github.io/two-ball-3d-dark/', 'Two Ball 3D')">
+		<img src="https://ovo-game.github.io/imgs/two-ball-3d-dark.png" alt="Two Ball 3D">
+		<h3>Two Ball 3D</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://gameshaxor.github.io/TinyFishing/', 'Tiny Fishing')">
+		<img src="https://htmlxm.github.io/thumb/tiny-fishing.png" alt="Tiny Fishing">
+		<h3>Tiny Fishing</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://htmlxm.github.io/h4/gold-digger-frvr/', 'Gold Digger FRVR')">
+		<img src="https://htmlxm.github.io/thumb/gold-digger-frvr.png" alt="Gold Digger FRVR">
+		<h3>Gold Digger FRVR</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://there-is-no-game.github.io/a/there-is-no-game/', 'There Is No Game!')">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl19wbjVZcBXUpnM57u-Oeb3af02VProa6QQ&s" alt="There Is No Game!">
+		<h3>There Is No Game!</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://webgltest-17af1.firebaseapp.com/', 'Smash Karts')">
+		<img src="https://fridaynight-funkin.github.io/imgs/smash-karts.png" alt="Smash Karts">
+		<h3>Smash Karts</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://htmlxm.github.io/h/raft-wars/', 'Raft Wars')">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r-oT16xxNncL3IvjdqcmnmsJVguEWj8i2g&s" alt="Raft Wars">
+		<h3>Raft Wars</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://htmlxm.github.io/h7/escaping-the-prison/', 'Escaping The Prison')">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaUpyDvHOH66MwhNx48I_9xGnaCgN3ICf8bw&s" alt="Escaping The Prison">
+		<h3>Escaping The Prison</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://htmlxm.github.io/h9/stack-ball/', 'Stack Ball')">
+		<img src="https://play-lh.googleusercontent.com/3pf26YI4SRN_Uk72hQeHJHbv57xOKOVEThflyjzoM6OegOxEolE8lGCImYz7DC9bv4w" alt="Stack Ball">
+		<h3>Stack Ball</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://narrow-one.github.io/n6/rocket-soccer-derby/', 'Rocket Soccer Derby')">
+		<img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=1200,fit=cover,f=png/e521bbbf13a6480b60d75421e7edc8d8d0e1edadaccd7d43438864b62a74088a.png" alt="Rocket Soccer Derby">
+		<h3>Rocket Soccer Derby</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://bobtherobberunblocked.github.io/2/', 'Bob The Robber 2')">
+		<img src="https://gameforge.com/de-DE/littlegames/includes/images/games/9468_5eb3ef7732ef0.jpg" alt="Bob The Robber 2">
+		<h3>Bob The Robber 2</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://23azostore.github.io/s7/bob-the-robber-4/', 'Bob The Robber 4')">
+		<img src="https://kizicdn.com/system/static/thumbs/big_tile_thumb/1896/thumb300_Thumb_300x300.jpg?1556203392" alt="Bob The Robber 4">
+		<h3>Bob The Robber 4</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://ubg98.github.io/SpaceBarClicker/', 'Spacebar Clicker')">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmy-2kxVy2rlT5Ow3HgzA2TM1XG3LEjCW4jQ&s" alt="Spacebar Clicker">
+		<h3>Spacebar Clicker</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://lnageo.github.io/a77/geometry-dash/', 'Geometry Dash')">
+		<img src="https://assets-prd.ignimgs.com/2021/12/14/geometrydash-1639510868467.jpg" alt="Geometry Dash">
+		<h3>Geometry Dash</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://soccerlegends.github.io/soccer-legends/', 'Soccer Legends 2021')">
+		<img src="https://soccerlegends.github.io/soccer-legends/logo.png" alt="Soccer Legends 2021">
+		<h3>Soccer Legends 2021</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://basketballstarsonline.github.io/file/', 'Basketball Stars')">
+		<img src="https://basketballstarsonline.github.io/images/favicon.png" alt="Basketball Stars">
+		<h3>Basketball Stars</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://fireboy-and-watergirl-online.github.io/file/', 'Fireboy And Watergirl 1')">
+		<img src="https://ubg100.github.io/games/fbwg1/img.gamedistribution.com/gamedistributionid-512x512.jpeg" alt="Fireboy And Watergirl 1">
+		<h3>Fireboy And Watergirl 1</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://slope-game.github.io/fireboy-water-2/', 'Fireboy And Watergirl 2')">
+		<img src="https://slope-game.github.io/fireboy-water-2/logo.png" alt="Fireboy And Watergirl 2 ">
+		<h3>Fireboy And Watergirl 2 </h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://slope-game.github.io/fireboy-water-3/', 'Fireboy And Watergirl 3')">
+		<img src="https://slope-game.github.io/fireboy-water-3/logo.png" alt="Fireboy And Watergirl 3">
+		<h3>Fireboy And Watergirl 3</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://slope-game.github.io/fireboy-water-4/', 'Fireboy And Watergirl 4')">
+		<img src="https://slope-game.github.io/fireboy-water-4/logo.png" alt="Fireboy And Watergirl 4">
+		<h3>Fireboy And Watergirl 4</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://ovolve.github.io/2048-AI/', '2048')">
+		<img src="https://play-lh.googleusercontent.com/vQ76wSmsuUnwrMYlbAjCUTSLe5pfmHouJhVJYX80G79rbPxPkdKkLLBmEHpeIG_Zsib_" alt="2048">
+		<h3>2048</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://bitlifeonline.github.io/watermelon-drop/', 'Watermelon Drop')">
+		<img src="https://lh3.googleusercontent.com/--A8oXeiMrxTMNGj9NMP4iprqYBVNrXGZAcoOQePaygs8uv7r9xb3jWQ9KdVT8vxCWm1ooiuzmRqThpcGaZVuKqqrg=s1280-w1280-h800" alt="Watermelon Drop">
+		<h3>Watermelon Drop</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://unogameonline.github.io/file/', 'Uno Game')">
+		<img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1ZsPC2Aa4ngf2sajDRwBTK/27fe4ba9fa21e2781f0608b14a801353/UNO_hero_desktop_promo.jpg" alt="Uno Game">
+		<h3>Uno Game</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://reunbozdo.github.io/', 'Block Blast')">
+		<img src="https://block-blast.online/_next/image?url=%2Fimg%2Fblock-blash-sc.jpg&w=3840&q=75" alt="Block Blast">
+		<h3>Block Blast</h3>
+	</div>
+  <div class="game-card" onclick="openGame('https://unblocked-games.s3.amazonaws.com/games/2024/gm/tennis-masters/index.html', 'Tennis Masters')">
+		<img src="https://images.crazygames.com/tennis-masters/20201207104629/tennis-masters-cover?auto=format,compress&q=75&cs=strip" alt="Tennis Masters">
+		<h3>Tennis Masters</h3>
+	</div>
+  </div>
+
+  <script>
+// Open the game in an about:blank tab with the game URL and title
+    function openGame(url, title) {
+      // Open a new blank tab
+      var newTab = window.open('about:blank', '_blank');
+
+      // Write the content to the new tab
+      newTab.document.write(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <title>${title}</title>
+          <style>
+            body {
+              margin: 0;
+              overflow: hidden;
+            }
+
+            iframe {
+              width: 100vw;
+              height: 100vh;
+              border: none;
+            }
+          </style>
+        </head>
+        <body>
+          <iframe src="${url}" frameborder="0"></iframe>
+        </body>
+        </html>
+      `);
+
+      // Close the document.write stream
+      newTab.document.close();
+    }
+  </script>
+</body>
+</html>
