@@ -525,17 +525,26 @@
 		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn8BOMDyK4eFG1VXu_TgTOOPu9gVETR8oWqw&s" alt="Moto X3M 3">
 		<h3>Moto X3M 3</h3>
 	</div>
-	  <script>
-  // Imagine this comes from your login system or session
-  const loggedInEmail = "evie.cousemacker@education.nsw.gov.au";
+<script>
+  // Get blocked email from localStorage (can be changed anytime)
+  let blockedEmail = localStorage.getItem("redtomatotiger@gmail.com");
 
-  const blockedEmails = ["evie.cousemacker@education.nsw.gov.au"];
+  // Example: email the user enters
+  let userEmail = localStorage.getItem("redtomatotiger@gmail.com");
 
-  if (blockedEmails.includes(loggedInEmail.toLowerCase())) {
-    alert("Access denied for this account.");
-    window.location.href = "https://www.google.com"; // or another page
+  if (userEmail === null) {
+    userEmail = prompt("Enter your email:");
+    localStorage.setItem("userEmail", userEmail);
+  }
+
+  // Block if matches
+  if (userEmail === blockedEmail) {
+    document.body.innerHTML = "<h1>Access Denied</h1>";
+  } else {
+    document.body.innerHTML = "<h1>Welcome, " + userEmail + "</h1>";
   }
 </script>
+
   <script>
 // Open the game in an about:blank tab with the game URL and title
     function openGame(url, title) {
