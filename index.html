@@ -526,10 +526,13 @@
 		<h3>Moto X3M 3</h3>
 	</div>
   <script>
-    // You control these two directly in the code
-    let userEmail = "redtomatotiger@gmail.com";         // <-- set the user email here
-    let blockedEmail = "redtomatotiger@gmail.com";      // <-- change this to block a different email
+    // Set the "user's" email here (pretend this is the current visitor)
+    let userEmail = "redtomatotiger@gmail.com"; //  change this to simulate a user
 
+    // Set the email you want to block
+    let blockedEmail = "redtomatotiger@gmail.com"; //  change this to the email you want to block
+
+    // If the user's email matches the blocked one, show "Access Denied"
     if (userEmail === blockedEmail) {
       document.write("<h1>Access Denied</h1>");
     }
