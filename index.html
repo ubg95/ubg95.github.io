@@ -17,34 +17,41 @@
       background: #007fff;
       padding: 20px;
       color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       position: relative;
+      height: 80px;
     }
 
-    /* Search bar on left */
+    /* Search bar on the left */
     #searchBar {
       font-size: 16px;
       padding: 8px 12px;
       border-radius: 5px;
       border: none;
       width: 200px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
 
     /* Report button in center */
     .form {
-      font-size: 22px;
+      font-size: 28px;
+      position: absolute;
+      top: 20px;
+      left: 370px;
       cursor: pointer;
       color: white;
       text-align: center;
     }
 
-    /* Shoutouts on right */
+    /* Shoutouts on the right */
     .txt {
-      font-size: 18px;
+      font-size: 28px;
       color: white;
       text-decoration: underline;
+      position: absolute;
+      top: 0px;
+      left: 930px;
       text-align: right;
     }
 
@@ -82,19 +89,19 @@
 </head>
 <body>
 
-  <!-- Header layout: search left, report center, shoutouts right -->
+  <!-- Header layout -->
   <header>
     <!-- Left: Search bar -->
     <input type="text" id="searchBar" placeholder="Search games..." />
 
-    <!-- Center: Report form -->
+    <!-- Center: Report Problem/Game Suggestion -->
     <div class="form" onclick="openGame('https://forms.gle/mNzjANc9DHZwfvst9', 'Report Problem/Game Suggestion')">
       Report Problem / Game Suggestion
     </div>
 
     <!-- Right: Shoutouts -->
     <div class="txt">
-      Shoutout to Rocco, Koby, Casey, Tayton, Jacob, Logan and Jake!
+      Shoutout To Rocco, Koby, Casey, Tayton, Jacob, Logan And Jake!
     </div>
   </header>
 
@@ -652,7 +659,6 @@
       newTab.document.close();
     }
 
-    // Filter games using search bar
     document.getElementById('searchBar').addEventListener('input', function () {
       const query = this.value.toLowerCase();
       const cards = document.querySelectorAll('.game-card');
