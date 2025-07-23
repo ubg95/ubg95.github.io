@@ -6,11 +6,6 @@
   <title>Unblocked Games</title>
   <link rel="icon" href="Logo.png" type="image/png">
   <style>
-    #hyperlink {
-      top: 15px;
-      left: 300px;
-    }
-
     .txt {
       font-size: 28px;
       color: white;
@@ -18,24 +13,6 @@
       position: absolute;
       top: 0px;
       left: 930px;
-    }
-
-    .link {
-      appearance: none;
-      border: 0;
-      border-color: #fff;
-      border-radius: 5px;
-      background: #007fff;
-      color: #000000;
-      padding: 0px 46px;
-      font-size: 20px;
-      cursor: pointer;
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 9%;
-      overflow: hidden;
     }
 
     body {
@@ -50,10 +27,17 @@
       padding: 20px;
       color: white;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       position: relative;
+    }
+
+    #searchBar {
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
     }
 
     .form {
@@ -62,25 +46,7 @@
       top: 20px;
       left: 370px;
       cursor: pointer;
-    }
-
-    .title-bar {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .title-bar h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    #searchBar {
-      font-size: 16px;
-      padding: 6px 12px;
-      border-radius: 5px;
-      border: none;
-      width: 200px;
+      color: white;
     }
 
     .game-grid {
@@ -116,19 +82,21 @@
   </style>
 </head>
 <body>
+  <!-- Shoutouts -->
   <h1 class="txt">Shoutout To Rocco, Koby, Casey, Tayton, Jacob, Logan And Jake!</h1>
 
+  <!-- Header with search bar replacing the Unblocked Games title -->
   <header>
-    <div class="title-bar">
-      <h1>Unblocked Games</h1>
-      <input type="text" id="searchBar" placeholder="Search games..." />
-    </div>
+    <!-- Search bar replaces "Unblocked Games" title on the left -->
+    <input type="text" id="searchBar" placeholder="Search games..." />
 
+    <!-- Report button stays in the same place -->
     <div onclick="openGame('https://forms.gle/mNzjANc9DHZwfvst9', 'Report Problem/Game Suggestion')">
       <h1 class="form">Report Problem/Game Suggestion</h1>
     </div>
   </header>
 
+  <!-- Game Cards -->
   <div class="game-grid" id="gameGrid">
     <div class="game-card" onclick="openGame('https://fridaynight-funkin.github.io/f6/stickman-bike/', 'Stickman Bike')">
       <img src="https://fridaynight-funkin.github.io/imgs/stickman-bike.png" alt="Stickman Bike">
@@ -653,9 +621,8 @@
 		<h3>Plants Vs Zombies</h3>
 	</div>
   <script>
-    // Open the game in an about:blank tab with the game URL and title
     function openGame(url, title) {
-      var newTab = window.open('about:blank', '_blank');
+      const newTab = window.open('about:blank', '_blank');
       newTab.document.write(`
         <!DOCTYPE html>
         <html lang="en">
@@ -683,7 +650,7 @@
       newTab.document.close();
     }
 
-    // Filter game cards based on search input
+    // Search filtering
     document.getElementById('searchBar').addEventListener('input', function () {
       const query = this.value.toLowerCase();
       const cards = document.querySelectorAll('.game-card');
