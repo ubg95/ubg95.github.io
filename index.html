@@ -683,7 +683,7 @@
       });
     });
   </script>
-  <script>
+<script>
   const searchBar = document.getElementById("searchBar");
   const gameCards = document.querySelectorAll(".game-card");
 
@@ -693,8 +693,8 @@
     gameCards.forEach((card) => {
       const title = card.querySelector("h3").textContent.toLowerCase();
 
-      // Show specific games when 'cj' is typed
-      if (searchBar.value === "CJ") {
+      // Show specific games when 'cj' is typed (case insensitive)
+      if (query === "cj") {
         const cjGames = [
           "the impossible quiz",
           "subway surfers",
