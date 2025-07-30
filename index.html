@@ -683,5 +683,40 @@
       });
     });
   </script>
+  <script>
+  const searchBar = document.getElementById("searchBar");
+  const gameCards = document.querySelectorAll(".game-card");
+
+  searchBar.addEventListener("input", function () {
+    const query = searchBar.value.toLowerCase();
+
+    gameCards.forEach((card) => {
+      const title = card.querySelector("h3").textContent.toLowerCase();
+
+      // Show specific games when 'cj' is typed
+      if (searchBar.value === "CJ") {
+        const cjGames = [
+          "the impossible quiz",
+          "subway surfers",
+          "stack",
+          "run 3",
+          "watermelon drop"
+        ];
+        if (cjGames.includes(title)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      } else {
+        // Normal search filtering
+        if (title.includes(query)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      }
+    });
+  });
+</script>
 </body>
 </html>
