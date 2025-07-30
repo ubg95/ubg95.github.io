@@ -191,6 +191,10 @@
 		<img src="https://avatars.githubusercontent.com/u/193616620?s=280&v=4" alt="Eggy Car">
 		<h3>Eggy Car</h3>
 	</div>
+  <div class="game-card" onclick="openGame('https://cookiedemon.github.io/cookieclicker/', 'Cookie Clicker')">
+		<img src="https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok" alt="Cookie Clicker">
+		<h3>Cookie Clicker</h3>
+	</div>
   <div class="game-card" onclick="openGame('https://tataedu23.github.io/g72/class-638/', 'Shell Jump')">
 		<img src="https://ovo-game.github.io/imgs/jumping-shell.png" alt="Shell Jump">
 		<h3>Shell Jump</h3>
@@ -636,7 +640,7 @@
 		<h3>Learn To Fly 2</h3>
 	</div>
 	  	<div class="game-card" onclick="openGame('https://play.unity.com/api/v1/games/game/5246a951-75b0-40e4-ab5a-ca531614f76b/build/latest/frame', 'Baldis Basics')">
-		<img src="https://baldis-basics-online.github.io/img/baldis-basics.png" alt="Baldi's Basics">
+		<img src="https://gnhustgames.github.io/imagetet/baldisbasics.png" alt="Baldi's Basics">
 		<h3>Baldi's Basics</h3>
 	</div>
   <script>
@@ -683,28 +687,76 @@
   const searchBar = document.getElementById("searchBar");
   const gameCards = document.querySelectorAll(".game-card");
 
+  const normalize = (str) => str.trim().toLowerCase();
+
+  const cjGames = [
+    "the impossible quiz",
+    "subway surfers",
+    "stack",
+    "run 3",
+    "watermelon drop"
+  ].map(normalize);
+
+  const jmGames = [
+    "cluster rush",
+    "level devil - not a troll game",
+    "moto road rash 3d",
+    "slope",
+    "traffic run 3d",
+    "stack",
+    "ragdoll archers",
+    "shell jump",
+    "drift boss",
+    "the impossible quiz",
+    "house of harzards",
+    "stickman fight ragdoll",
+    "stick merge",
+    "deal or no deal"
+  ].map(normalize);
+
+  const jkGames = [
+     "cluster rush",
+    "level devil - not a troll game",
+    "moto road rash 3d",
+    "slope",
+    "traffic run 3d",
+    "stack",
+    "ragdoll archers",
+    "shell jump",
+    "drift boss",
+    "the impossible quiz",
+    "house of harzards",
+    "stickman fight ragdoll",
+    "stick merge",
+    "deal or no deal"
+  ].map(normalize);
+
   searchBar.addEventListener("input", function () {
-    const query = searchBar.value.toLowerCase();
+    const query = normalize(searchBar.value);
 
     gameCards.forEach((card) => {
-      const title = card.querySelector("h3").textContent.toLowerCase();
+      const title = normalize(card.querySelector("h3").textContent);
 
-      // Show specific games when 'cj' is typed (case insensitive)
       if (query === "cj") {
-        const cjGames = [
-          "the impossible quiz",
-          "subway surfers",
-          "stack",
-          "run 3",
-          "watermelon drop"
-        ];
         if (cjGames.includes(title)) {
           card.style.display = "";
         } else {
           card.style.display = "none";
         }
+      } else if (query === "jm") {
+        if (jmGames.includes(title)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      } else if (query === "jk") {
+        if (jkGames.includes(title)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
       } else {
-        // Normal search filtering
+        // Normal search
         if (title.includes(query)) {
           card.style.display = "";
         } else {
