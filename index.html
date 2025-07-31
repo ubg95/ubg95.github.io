@@ -797,6 +797,17 @@ header {
     });
   });
 </script>
+<script>
+  let scrollTimeout;
 
+  window.addEventListener("scroll", () => {
+    document.body.style.cursor = "url('Scrolling Galaxy.cur'), default";
+
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      document.body.style.cursor = "url('Normal Galaxy.cur'), default";
+    }, 400);
+  });
+</script>
 </body>
 </html>
