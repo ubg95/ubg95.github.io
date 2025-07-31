@@ -801,13 +801,18 @@ header {
   let scrollTimeout;
 
   window.addEventListener("scroll", () => {
+    // Change to scrolling cursor
     document.body.style.cursor = "url('Scrolling Galaxy.cur'), default";
 
+    // Reset timer if still scrolling
     clearTimeout(scrollTimeout);
+
+    // After 300ms without scroll, revert to normal
     scrollTimeout = setTimeout(() => {
       document.body.style.cursor = "url('Normal Galaxy.cur'), default";
-    }, 400);
+    }, 300);
   });
 </script>
+
 </body>
 </html>
