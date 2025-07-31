@@ -11,12 +11,9 @@ body {
   font-family: sans-serif;
   background-image: url("galaxy.jpg");
   overflow-y: auto;
-
-  /* 👇 Default cursor for body */
   cursor: url("Normal Galaxy.cur"), default;
 }
 
-/* 👇 Custom pointer cursor for clickable elements */
 a,
 button,
 .form,
@@ -62,7 +59,6 @@ header {
   text-align: right;
 }
 
-/* ✅ Grid container for all game cards */
 .game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -70,7 +66,6 @@ header {
   padding: 20px;
 }
 
-/* ✅ Individual game card styling */
 .game-card {
   background: white;
   border-radius: 10px;
@@ -94,6 +89,25 @@ header {
 
 .game-card h3 {
   margin: 10px;
+}
+
+/* ✅ Custom cursor for text selection */
+input,
+textarea,
+.selectable,
+p,
+span,
+h1, h2, h3, h4, h5, h6 {
+  cursor: url("Text Galaxy.cur"), text;
+}
+/* ✅ Custom cursor for text selection */
+input,
+textarea,
+.selectable,
+p,
+span,
+h1, h2, h3, h4, h5, h6 {
+  cursor: url("Type Galaxy.cur"), text;
 }
 </style>
 </head>
