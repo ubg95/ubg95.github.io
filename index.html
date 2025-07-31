@@ -712,25 +712,15 @@
     "stickman fight ragdoll",
     "stick merge",
     "deal or no deal",
-	"dreadhead parkour"
+    "dreadhead parkour"
   ].map(normalize);
 
-  const jkGames = [
-     "cluster rush",
-    "level devil - not a troll game",
-    "moto road rash 3d",
-    "slope",
-    "traffic run 3d",
-    "stack",
-    "ragdoll archers",
-    "shell jump",
-    "drift boss",
-    "the impossible quiz",
-    "house of harzards",
-    "stickman fight ragdoll",
-    "stick merge",
-    "deal or no deal",
-	"dreadhead parkour"
+  const jkGames = [...jmGames]; // Same list as jmGames
+
+  const caylenAndJaxtonGames = [
+    "eggy car",
+    "retro bowl",
+    "idle mining empire"
   ].map(normalize);
 
   searchBar.addEventListener("input", function () {
@@ -740,25 +730,47 @@
       const title = normalize(card.querySelector("h3").textContent);
 
       if (query === "cj") {
+        card.style.display = cjGames.includes(title) ? "" : "none";
+      } else if (query === "jm") {
+        card.style.display = jmGames.includes(title) ? "" : "none";
+      } else if (query === "jk") {
+        card.style.display = jkGames.includes(title) ? "" : "none";
+      } else if (query === "caylen and jaxton") {
+        card.style.display = caylenAndJaxtonGames.includes(title) ? "" : "none";
+      } else {
+        // Normal search
+        card.style.display = title.includes(query) ? "" : "none";
+      }
+    });
+  });
+</script>
+
+<script>
+  const searchBar = document.getElementById("searchBar");
+  const gameCards = document.querySelectorAll(".game-card");
+
+  searchBar.addEventListener("input", function () {
+    const query = searchBar.value.trim().toLowerCase();
+
+    const cjTrigger = "caylen and jaxton";
+    const cjGames = [
+      "eggy car",
+      "retro bowl",
+      "idle mining empire"
+    ];
+
+    gameCards.forEach((card) => {
+      const title = card.querySelector("h3").textContent.trim().toLowerCase();
+
+      if (query === cjTrigger) {
+        // Show only CJ games
         if (cjGames.includes(title)) {
           card.style.display = "";
         } else {
           card.style.display = "none";
         }
-      } else if (query === "jm") {
-        if (jmGames.includes(title)) {
-          card.style.display = "";
-        } else {
-          card.style.display = "none";
-        }
-      } else if (query === "jk") {
-        if (jkGames.includes(title)) {
-          card.style.display = "";
-        } else {
-          card.style.display = "none";
-        }
       } else {
-        // Normal search
+        // Normal search filtering
         if (title.includes(query)) {
           card.style.display = "";
         } else {
@@ -768,5 +780,6 @@
     });
   });
 </script>
+
 </body>
 </html>
