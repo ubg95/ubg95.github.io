@@ -797,22 +797,16 @@ header {
     });
   });
 </script>
-<script>
-  let scrollTimeout;
-
-  window.addEventListener("scroll", () => {
-    // Change to scrolling cursor
-    document.body.style.cursor = "url('Scrolling Galaxy.cur'), default";
-
-    // Reset timer if still scrolling
-    clearTimeout(scrollTimeout);
-
-    // After 300ms without scroll, revert to normal
-    scrollTimeout = setTimeout(() => {
+	  <script>
+  window.addEventListener("contextmenu", function (e) {
+    e.preventDefault(); // block default menu
+    document.body.style.cursor = "url('RightClick Galaxy.cur'), pointer";
+    
+    // Optional: Reset cursor after a short time
+    setTimeout(() => {
       document.body.style.cursor = "url('Normal Galaxy.cur'), default";
-    }, 300);
+    }, 500);
   });
 </script>
-
 </body>
 </html>
