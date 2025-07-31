@@ -6,83 +6,91 @@
   <title>Unblocked Games</title>
   <link rel="icon" href="Logo.png" type="image/png">
   <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-image: url("galaxy.jpg");
-      overflow-y: auto;
-    }
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("galaxy.jpg");
+    overflow-y: auto;
 
-    header {
-      background: #007fff;
-      padding: 10px 20px;
-      color: white;
-      position: relative;
-      height: 60px;
-    }
+    /* 👇 Normal cursor */
+    cursor: url("Normal Galaxy.cur"), default;
+  }
 
-    #searchBar {
-      font-size: 16px;
-      padding: 6px 10px;
-      border-radius: 5px;
-      border: none;
-      width: 200px;
-      position: absolute;
-      top: 25px; /* aligned with other header texts */
-      left: 20px;
-    }
+  a, button, .game-card {
+    /* 👇 Link/select cursor */
+    cursor: url("Click Galaxy.cur"), pointer;
+  }
 
-    .form {
-      font-size: 28px;
-      position: absolute;
-      top: 5px;
-      left: 370px;
-      cursor: pointer;
-      color: ;
-      text-align: center;
-    }
+  header {
+    background: #007fff;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    height: 60px;
+  }
 
-    .txt {
-      font-size: 28px;
-      color: we;
-      text-decoration: underline;
-      position: absolute;
-      top: 5px;
-      left: 930px;
-      text-align: right;
-    }
+  #searchBar {
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    position: absolute;
+    top: 25px; /* aligned with other header texts */
+    left: 20px;
+  }
 
-    .game-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
+  .form {
+    font-size: 28px;
+    position: absolute;
+    top: 5px;
+    left: 370px;
+    cursor: pointer;
+    color: ;
+    text-align: center;
+  }
 
-    .game-card {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      cursor: pointer;
-      transition: 0.2s;
-    }
+  .txt {
+    font-size: 28px;
+    color: we;
+    text-decoration: underline;
+    position: absolute;
+    top: 5px;
+    left: 930px;
+    text-align: right;
+  }
 
-    .game-card:hover {
-      transform: scale(1.05);
-    }
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
 
-    .game-card img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-    }
+  .game-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.2s;
+    /* pointer cursor already handled above */
+  }
 
-    .game-card h3 {
-      margin: 10px;
-    }
-  </style>
+  .game-card:hover {
+    transform: scale(1.05);
+  }
+
+  .game-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .game-card h3 {
+    margin: 10px;
+  }
+</style>
 </head>
 <body>
 
