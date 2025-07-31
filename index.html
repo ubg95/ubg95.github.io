@@ -5,96 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Unblocked Games</title>
   <link rel="icon" href="Logo.png" type="image/png">
-  <style>
-  body {
-    margin: 0;
-    font-family: sans-serif;
-    background-image: url("galaxy.jpg");
-    overflow-y: auto;
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url("galaxy.jpg");
+  overflow-y: auto;
 
-    /* 👇 Normal cursor */
-    cursor: url("Normal Galaxy.cur"), default;
-  }
+  /* 👇 Default cursor for body */
+  cursor: url("Normal Galaxy.cur"), default;
+}
 
-  a, button, .game-card {
-    /* 👇 Link/select cursor */
-    cursor: url("Click Galaxy.cur"), pointer;
-  }
-  a, button, .form {
-    /* 👇 Link/select cursor */
-    cursor: url("Click Galaxy.cur"), pointer;
-  }
+/* 👇 Custom pointer cursor for clickable elements */
+a,
+button,
+.form,
+.game-card {
+  cursor: url("Click Galaxy.cur"), pointer;
+}
 
-  header {
-    background: #007fff;
-    padding: 10px 20px;
-    color: white;
-    position: relative;
-    height: 60px;
-  }
+header {
+  background: #007fff;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+  height: 60px;
+}
 
-  #searchBar {
-    font-size: 16px;
-    padding: 6px 10px;
-    border-radius: 5px;
-    border: none;
-    width: 200px;
-    position: absolute;
-    top: 25px; /* aligned with other header texts */
-    left: 20px;
-  }
+#searchBar {
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
 
-  .form {
-    font-size: 28px;
-    position: absolute;
-    top: 5px;
-    left: 370px;
-    cursor: pointer;
-    color: ;
-    text-align: center;
-  }
+.form {
+  font-size: 28px;
+  position: absolute;
+  top: 5px;
+  left: 370px;
+  text-align: center;
+  color: white;
+}
 
-  .txt {
-    font-size: 28px;
-    color: we;
-    text-decoration: underline;
-    position: absolute;
-    top: 5px;
-    left: 930px;
-    text-align: right;
-  }
+.txt {
+  font-size: 28px;
+  color: white;
+  text-decoration: underline;
+  position: absolute;
+  top: 5px;
+  left: 930px;
+  text-align: right;
+}
 
-  .game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 20px;
-  }
+/* ✅ Grid container for all game cards */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
 
-  .game-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: 0.2s;
-    /* pointer cursor already handled above */
-  }
+/* ✅ Individual game card styling */
+.game-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: url("Click Galaxy.cur"), pointer;
+}
 
-  .game-card:hover {
-    transform: scale(1.05);
-  }
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-  .game-card img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-  }
+.game-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
 
-  .game-card h3 {
-    margin: 10px;
-  }
-</style>
+.game-card h3 {
+  margin: 10px;
+}
+</stlye>
 </head>
 <body>
 
