@@ -137,6 +137,7 @@ https://tataedu23.github.io/g16/class-655/
 https://ubg95.github.io/file/learn_to_fly_2.html
 https://play.unity.com/api/v1/games/game/5246a951-75b0-40e4-ab5a-ca531614f76b/build/latest/frame/
 https://tataedu23.github.io/g72/class-625/
+https://abinbins.github.io/a7/jetpack-joyride/
 
 For all the games! 😁😁😁😁😁😁😁😁😁 
 
